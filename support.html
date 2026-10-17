@@ -12,6 +12,11 @@ main{max-width:680px;margin:0 auto;padding:48px 16px 64px}
 h1{font-family:"New York",Georgia,serif;font-weight:600;font-size:2rem;margin:0 0 16px}
 h2{font-size:1.05rem;margin:28px 0 6px;color:var(--accent)}
 a{color:var(--accent)} .muted{color:var(--muted)}
+:root{--line:rgba(255,255,255,.14)}
+@media (prefers-color-scheme: light){:root{--line:rgba(0,0,0,.14)}}
+footer{max-width:680px;margin:0 auto;padding:0 16px 48px;font-size:.9rem;color:var(--muted)}
+footer nav{display:flex;flex-wrap:wrap;gap:6px 10px;border-top:1px solid var(--line);padding-top:20px}
+footer a{color:var(--muted)} footer a[aria-current]{color:var(--fg);text-decoration:none}
 </style>
 </head>
 <body>
@@ -46,8 +51,10 @@ a{color:var(--accent)} .muted{color:var(--muted)}
 <p>Settings › your name › Subscriptions › Tvoli.</p>
 
 <h2>Contact</h2>
-<p><a href="https://github.com/cenkgundev/tvoli-privacy/issues">Open an issue</a>.</p>
-<p class="muted"><a href="./">Privacy Policy</a></p>
+<p><a href="mailto:support@melyro.app">support@melyro.app</a></p>
 </main>
+<footer>
+<nav aria-label="Pages"><a href="index.html">Privacy</a> <span aria-hidden="true">·</span> <a href="terms.html">Terms</a> <span aria-hidden="true">·</span> <a href="support.html" aria-current="page">Support</a></nav>
+</footer>
 </body>
 </html>
